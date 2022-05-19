@@ -223,7 +223,7 @@ watchEffect(() => {
 
 const { mutate: toggleLike, likeMutationError } = useMutation(TOGGLE_LIKE, {
   variables: {
-    recipeid: route.params.id,
+    recipeid: route.query.id,
     userid: store.state.user?.id ?? null,
   },
 });
@@ -231,7 +231,7 @@ const { mutate: toggleBookmark, bookmarkMutationError } = useMutation(
   TOGGLE_BOOKMARK,
   {
     variables: {
-      recipeid: route.params.id,
+      recipeid: route.query.id,
       userid: store.state.user?.id ?? null,
     },
   }
@@ -240,7 +240,7 @@ const { mutate: toggleFavorite, favoriteMutationError } = useMutation(
   TOGGLE_FAVORITE,
   {
     variables: {
-      recipeid: route.params.id,
+      recipeid: route.query.id,
       userid: store.state.user?.id ?? null,
     },
   }

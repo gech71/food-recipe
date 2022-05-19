@@ -136,7 +136,7 @@ const handleSendComment = () => {
     addComment({
       comment: commentRef.value,
       uid: store.state.user.id,
-      rid: route.params.id,
+      rid: route.query.id,
     })
       .then((res) => {
         props.refresh();

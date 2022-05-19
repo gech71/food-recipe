@@ -211,7 +211,7 @@ const postRate = () => {
       GIVE_RECIPE_A_RATE,
       {
         variables: {
-          recipeid: route.params.id,
+          recipeid: route.query.id,
           userid: store.state.user?.id ?? null,
           user_rate_value: userRate.value,
         },
