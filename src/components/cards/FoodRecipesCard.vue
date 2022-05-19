@@ -49,7 +49,7 @@
             </svg>
             <p class="text-sm">
               {{
-                foodProperty.rating_count % 2 == 0
+                Number.isInteger(foodProperty.rating_count)
                   ? foodProperty.rating_count
                   : foodProperty.rating_count.toFixed(1)
               }}

@@ -4,7 +4,7 @@
   >
     <p class="text-xl font-bold text-slate-600">
       Total Recipe Rating ({{
-        totalRating % 2 == 0 ? totalRating : totalRating.toFixed(2)
+        Number.isInteger(totalRating) ? totalRating : totalRating.toFixed(1)
       }})
     </p>
     <div class="flex items-center">
