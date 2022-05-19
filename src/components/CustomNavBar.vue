@@ -39,11 +39,7 @@
         </li>
         <li
           @click="goToFavorite"
-          :class="
-            isActive && currentPath.match(/Favorite/i)
-              ? activeStyle
-              : notActiveStyle
-          "
+          :class="currentPath.match(/Favorite/i) ? activeStyle : notActiveStyle"
         >
           Favorite
         </li>
