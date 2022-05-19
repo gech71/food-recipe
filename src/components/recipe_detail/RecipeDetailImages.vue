@@ -14,8 +14,8 @@
       :key="image"
       :src="images[index]"
       alt=""
-      :class="index == imgIndex ? 'inline-block' : 'hidden'"
-      class="md:w-full w-screen h-96 md:h-[20rem] object-cover mx-auto"
+      :class="index == imgIndex ? 'inline' : 'hidden'"
+      class="md:w-full w-screen h-96 md:h-[20rem] object-cover mx-auto overflow-hidden"
     />
     <!-- <img
       :src="images[imgIndex]"
