@@ -122,6 +122,7 @@ defineProps({
 });
 
 const showDetailPage = (id) => {
-  router.push({ name: "Details", params: { id } });
+  // router.push({ name: "Details", params: { id } });
+  router.push(`/Details?id=${id}`);
 };
 </script>

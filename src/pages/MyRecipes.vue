@@ -129,7 +129,7 @@ const handleDelete = (id, title) => {
 };
 
 const gotoDetailPage = (id) => {
-  router.push({ name: "Details", params: { id } });
+  router.push(`/Details?id=${id}`);
 };
 
 const goToCreatePage = () => {

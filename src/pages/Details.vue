@@ -81,7 +81,7 @@ const route = useRoute();
 const { result, error, variables, loading, refetch } =
   useQuery(GET_RECIPE_DETAIL);
 variables.value = {
-  recipeid: route.params.id,
+  recipeid: route.query.id,
 };
 const recipesResult = computed(() => result.value?.get_recipe_by_id ?? []);
 
@@ -124,7 +124,7 @@ const {
   refetch: refech_var,
 } = useQuery(GET_RECIPE_VARS);
 variable_var.value = {
-  recipeid: route.params.id,
+  recipeid: route.query.id,
   userid: store.state.user?.id ?? null,
 };
 
@@ -141,7 +141,7 @@ const {
 } = useQuery(RATING_VAR);
 
 rating_vars.value = {
-  recipeid: route.params.id,
+  recipeid: route.query.id,
   userid: store.state.user?.id ?? null,
 };
 
@@ -157,12 +157,12 @@ const {
   refetch: refetch_comment,
 } = useQuery(GET_COMMENTS_AND_REVIEWS);
 comment_var.value = {
-  recipeid: route.params.id,
+  recipeid: route.query.id,
 };
 const all_reviews = computed(() => comment_res.value?.get_review ?? []);
 
 onMounted(() => {
-  if (route.params.id == null) {
+  if (route.query.id == null) {
     router.replace("/");
   }
 });

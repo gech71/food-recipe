@@ -22,6 +22,6 @@ const props = defineProps({
 
 const router = useRouter();
 function gotoDetailPage() {
-  router.push({ name: "Details", params: { id: props.recipeId } });
+  router.push(`/Details?id=${props.recipeId}`);
 }
 </script>
