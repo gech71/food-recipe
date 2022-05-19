@@ -10,7 +10,7 @@
         <div class="flex">
           <button
             @click="favoriteUnFavoriteRecipe"
-            class="text-sm px-3 py-2 rounded-full bg-slate-200 mr-2 drop-shadow-md hover:scale-x-105 duration-300 hover:drop-shadow-2xl text-red-600"
+            class="text-sm w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-slate-200 mr-2 drop-shadow-md hover:scale-x-105 duration-300 hover:drop-shadow-2xl text-red-600"
           >
             <svg
               class="focus:outline-none w-6 h-6 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
@@ -33,7 +33,7 @@
           </button>
           <button
             @click="bookmarkUnbookmarkRecipe"
-            class="text-sm px-3 py-2 rounded-full bg-slate-200 mr-2 drop-shadow-md hover:scale-x-105 duration-300 hover:drop-shadow-2xl"
+            class="text-sm w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-slate-200 mr-2 drop-shadow-md hover:scale-x-105 duration-300 hover:drop-shadow-2xl"
           >
             <!-- Add To Fav -->
             <svg
