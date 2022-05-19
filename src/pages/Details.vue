@@ -11,7 +11,7 @@
     v-else-if="error"
     class="text-2xl w-full flex-1 items-center text-center justify-center"
   >
-    {{ error }}
+    
   </div>
   <div v-else class="flex bg-slate-200 min-h-screen flex-col p-2">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
