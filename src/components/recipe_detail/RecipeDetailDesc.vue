@@ -202,7 +202,7 @@ const props = defineProps({
   ingredientCount: Number,
   stepsCount: Number,
   data: Object,
-  refresh: Function,
+  fetchMore: Function,
 });
 
 const commentCount = ref(0);
@@ -250,7 +250,12 @@ const likeDislikeRecipe = () => {
   if (store.state.user) {
     toggleLike()
       .then((res) => {
-        props.refresh();
+        props.fetchMore({
+          variables: {
+            recipeid: route.query.id,
+            userid: store.state.user?.id ?? null,
+          },
+        });
       })
       .catch((err) => {});
   } else {
@@ -261,7 +266,12 @@ const likeDislikeRecipe = () => {
 const bookmarkUnbookmarkRecipe = () => {
   if (store.state.user) {
     toggleBookmark().then((res) => {
-      props.refresh();
+      props.fetchMore({
+        variables: {
+          recipeid: route.query.id,
+          userid: store.state.user?.id ?? null,
+        },
+      });
     });
   } else {
     const msg = confirm("You Need To Log In First. Want To Log In?");
@@ -271,7 +281,12 @@ const bookmarkUnbookmarkRecipe = () => {
 const favoriteUnFavoriteRecipe = () => {
   if (store.state.user) {
     toggleFavorite().then((res) => {
-      props.refresh();
+      props.fetchMore({
+        variables: {
+          recipeid: route.query.id,
+          userid: store.state.user?.id ?? null,
+        },
+      });
     });
   } else {
     const msg = confirm("You Need To Log In First. Want To Log In?");
