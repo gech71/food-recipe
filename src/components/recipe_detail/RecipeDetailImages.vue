@@ -34,11 +34,11 @@ const props = defineProps({
 
 const imgIndex = ref(0);
 
-let images = ref([]);
+let images = [...props.images];
 
-watchEffect(() => {
-  images.value = [...props.images];
-});
+// watchEffect(() => {
+//   images.value = [...props.images];
+// });
 
 const fBtn = () => {
   if (imgIndex.value < images.value.length - 1) {
