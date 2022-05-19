@@ -388,7 +388,6 @@ const submit = handleSubmit(
     uploading.value = true;
     for (let index = 0; index < selectedImageNames.value.length; index++) {
       currentUploading.value = index + 1;
-      console.count("index");
       const imgLink = await useGenerateImageLink(
         selectedImageNames.value[index],
         selectedImages.value[index]
