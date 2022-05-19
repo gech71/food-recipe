@@ -45,20 +45,14 @@
         </li>
         <li
           @click="goToBookmark"
-          :class="
-            isActive && currentPath === '/Bookmark'
-              ? activeStyle
-              : notActiveStyle
-          "
+          :class="currentPath.match(/Bookmark/i) ? activeStyle : notActiveStyle"
         >
           Bookmark
         </li>
         <li
           @click="goToMyRecipe"
           :class="
-            isActive && currentPath === '/MyRecipes'
-              ? activeStyle
-              : notActiveStyle
+            currentPath.match(/MyRecipes/i) ? activeStyle : notActiveStyle
           "
         >
           My Recipes
@@ -66,9 +60,7 @@
         <li
           @click="goCreateRecipe"
           :class="
-            isActive && currentPath === '/CreateRecipe'
-              ? activeStyle
-              : notActiveStyle
+            currentPath.match(/CreateRecipe/i) ? activeStyle : notActiveStyle
           "
         >
           Create Recipes
