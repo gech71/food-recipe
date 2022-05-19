@@ -14,7 +14,7 @@
       :key="image"
       :src="images[index]"
       alt=""
-      :class="index == imgIndex ? 'hidden' : 'inline-block'"
+      :class="index == imgIndex ? 'inline-block' : 'hidden'"
       class="md:w-full w-screen h-96 md:h-[20rem] object-cover mx-auto"
     />
     <!-- <img
