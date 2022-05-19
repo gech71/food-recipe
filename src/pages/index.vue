@@ -1,7 +1,7 @@
 <template>
   <div class="relative min-h-screen bg-slate-200 flex flex-col">
     <div
-      class="absolute h-[17rem] bg-[url('https://ibb.co/yNyxK8r')] bg-bottom bg-cover top-0 w-full"
+      class="absolute h-[17rem] bg-[url(https://ibb.co/yNyxK8r)] bg-bottom bg-cover top-0 w-full"
     ></div>
     <div class="h-full flex flex-row relative">
       <div class="h-full flex-grow ease-in-out">
