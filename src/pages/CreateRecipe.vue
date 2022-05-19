@@ -395,10 +395,8 @@ const submit = handleSubmit(
       );
       if (index === featuredImage.value) {
         r_featuredImageLink += imgLink;
-        console.log("Feature : ", imgLink);
       } else {
         r_imagesLink.push(imgLink);
-        console.log("Image ", imgLink);
       }
     }
 
