@@ -107,7 +107,7 @@ variables.value = { userid: store.state.user.id };
 onMounted(() => {
   fetchMore({
     variables: {
-      userId: store.state.user.id,
+      userid: store.state.user.id,
     },
   });
 });
