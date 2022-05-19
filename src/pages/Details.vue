@@ -11,7 +11,10 @@
     v-else-if="error"
     class="text-2xl w-full flex-1 items-center text-center justify-center"
   >
-    
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate esse
+    ducimus sapiente doloremque, iste minus magnam quaerat dolorum dignissimos
+    quam animi, dicta voluptas beatae tenetur quidem. Minus libero consequatur
+    possimus!
   </div>
   <div v-else class="flex bg-slate-200 min-h-screen flex-col p-2">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
