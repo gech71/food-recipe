@@ -40,7 +40,9 @@
         <li
           @click="goToFavorite"
           :class="
-            currentPath.match(/\/Favorite/i) ? activeStyle : notActiveStyle
+            isActive && currentPath.match(/\/Favorite/i)
+              ? activeStyle
+              : notActiveStyle
           "
         >
           Favorite
@@ -48,7 +50,9 @@
         <li
           @click="goToBookmark"
           :class="
-            currentPath.match(/\/Bookmark/i) ? activeStyle : notActiveStyle
+            isActive && currentPath.match(/\/Bookmark/i)
+              ? activeStyle
+              : notActiveStyle
           "
         >
           Bookmark
@@ -56,7 +60,9 @@
         <li
           @click="goToMyRecipe"
           :class="
-            currentPath.match(/\/MyRecipes/i) ? activeStyle : notActiveStyle
+            isActive && currentPath.match(/\/MyRecipes/i)
+              ? activeStyle
+              : notActiveStyle
           "
         >
           My Recipes
@@ -64,7 +70,9 @@
         <li
           @click="goCreateRecipe"
           :class="
-            currentPath.match(/\/CreateRecipe/i) ? activeStyle : notActiveStyle
+            isActive && currentPath.match(/\/CreateRecipe/i)
+              ? activeStyle
+              : notActiveStyle
           "
         >
           Create Recipes
