@@ -18,7 +18,7 @@ export const logInValidationSchema = {
 export const createRecipeValidationSchema = {
   r_name(value) {
     if (!value) return "Recipe name required";
-    if (value.length < 3) return "Recipe name must be 3+ chars";
+    if (value.trim().length < 3) return "Recipe name must be 3+ chars";
 
     return true;
   },
@@ -34,13 +34,13 @@ export const createRecipeValidationSchema = {
   r_ingredients(value) {
     if (!value && ingredients.value.length > 0) return true;
     if (!value) return "Ingredient is required";
-    if (value.length <= 10) return "Ingredient is too short";
+    if (value.trim().length <= 3) return "Ingredient is too short";
     return true;
   },
   r_steps(value) {
     if (!value && steps.value.length > 0) return true;
     if (!value) return "Step is required";
-    if (value.length <= 10) return "Step is too short";
+    if (value.trim().length <= 3) return "Step is too short";
     return true;
   },
   r_description(value) {
