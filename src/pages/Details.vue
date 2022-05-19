@@ -28,7 +28,7 @@
           :ingredientCount="ingredients.length"
           :stepsCount="directions.length"
           :data="response_desc_var"
-          :fetchMore="fetchMore_var"
+          :refresh="refech_var"
         />
         <div
           class="grid grid-cols-1 gap-2 bg-slate-200 drop-shadow-md p-4 rounded-xl"
@@ -125,7 +125,6 @@ const {
   result: result_var,
   variables: variable_var,
   refetch: refech_var,
-  fetchMore: fetchMore_var,
 } = useQuery(GET_RECIPE_VARS);
 variable_var.value = {
   recipeid: route.query.id,
