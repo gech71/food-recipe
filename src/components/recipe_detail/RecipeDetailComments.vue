@@ -149,5 +149,6 @@ const handleSendComment = () => {
       router.push("/Authentication");
     }
   }
+  commentRef.value = "";
 };
 </script>
