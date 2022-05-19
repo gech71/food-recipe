@@ -161,11 +161,11 @@ comment_var.value = {
 };
 const all_reviews = computed(() => comment_res.value?.get_review ?? []);
 
-onMounted(() => {
-  if (route.query.id == null) {
-    router.replace("/");
-  }
-});
+// onMounted(() => {
+//   if (route.query.id == null) {
+//     router.replace("/");
+//   }
+// });
 </script>
 <style></style>
 <route lang="yaml">
