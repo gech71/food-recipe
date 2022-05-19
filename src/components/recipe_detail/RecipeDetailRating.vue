@@ -93,7 +93,7 @@
       <h1 class="text-xl font-bold text-slate-600">Your Rating</h1>
       <div class="flex items-centers flex-1">
         <p
-          class="bg-slate-200 drop-shadow-lg w-[2rem] h-[2rem] rounded-full uppercase font-mono"
+          class="bg-slate-200 drop-shadow-lg w-[2rem] h-[2rem] flex items-center justify-center rounded-full uppercase font-mono"
         >
           {{ store.state.user?.username.charAt(0) }}
         </p>
