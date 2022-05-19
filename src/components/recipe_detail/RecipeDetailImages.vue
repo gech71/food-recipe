@@ -8,11 +8,20 @@
       alt=""
       class="absolute -left-0 top-[50%] hover:cursor-pointer"
     />
+
     <img
+      v-for="(image, index) in images"
+      :key="image"
+      :src="images[index]"
+      alt=""
+      :class="index == imgIndex ? 'hidden' : 'inline-block'"
+      class="md:w-full w-screen h-96 md:h-[20rem] object-cover mx-auto"
+    />
+    <!-- <img
       :src="images[imgIndex]"
       alt=""
       class="md:w-full w-screen h-96 md:h-[20rem] object-cover mx-auto"
-    />
+    /> -->
     <img
       v-if="imgIndex < images.length - 1"
       @click="fBtn"
@@ -34,11 +43,11 @@ const props = defineProps({
 
 const imgIndex = ref(0);
 
-let images = [...props.images];
+let images = ref([]);
 
-// watchEffect(() => {
-//   images.value = [...props.images];
-// });
+watchEffect(() => {
+  images.value = [...props.images];
+});
 
 const fBtn = () => {
   if (imgIndex.value < images.value.length - 1) {
