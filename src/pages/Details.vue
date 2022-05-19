@@ -7,15 +7,15 @@
     <p>Loading...</p>
   </div>
 
-  <div
-    v-else-if="error"
-    class="text-2xl w-full flex-1 items-center text-center justify-center"
-  >
-    <p>
+  <div v-else-if="error">
+    <div
+      class="w-full text-center font-light mt-40 text-2xl text-gray-400 px-8"
+    >
       Recipe With Id <span class="text-red-900">{{ route.query.id }}</span> Not
       Found
-    </p>
+    </div>
   </div>
+
   <div v-else class="flex bg-slate-200 min-h-screen flex-col p-2">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
       <div class="flex flex-col gap-8">
