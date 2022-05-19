@@ -128,3 +128,13 @@ export const GET_FAVORITES = gql`
     }
   }
 `;
+
+export const GET_MY_RECIPES = gql`
+  query ($userid: uuid) {
+    get_my_recipes(args: { user_id: $userid }) {
+      image
+      title
+      id
+    }
+  }
+`;

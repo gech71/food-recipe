@@ -78,3 +78,11 @@ export const ADD_COMMENT = gql`
     }
   }
 `;
+
+export const DELETE_MY_RECIPE = gql`
+  mutation ($recipeid: uuid) {
+    delete_my_recipe(args: { recipe_id: $recipeid }) {
+      id
+    }
+  }
+`;

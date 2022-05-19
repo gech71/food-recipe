@@ -36,7 +36,6 @@ meta:
 <script setup>
 import { useQuery } from "@vue/apollo-composable";
 import { computed, onMounted, watchEffect } from "@vue/runtime-core";
-import { gql } from "graphql-tag";
 import { useStore } from "vuex";
 import { GET_BOOKMARKS } from "../composables/queries";
 

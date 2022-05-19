@@ -72,30 +72,13 @@ meta:
 <script setup>
 import { useStore } from "vuex";
 import { useQuery, useMutation } from "@vue/apollo-composable";
-import { gql } from "graphql-tag";
 import { computed, onMounted } from "@vue/runtime-core";
 import { useRouter } from "vue-router";
+import { DELETE_MY_RECIPE } from "../composables/mutations";
+import { GET_MY_RECIPES } from "../composables/queries";
 const router = useRouter();
 
 const store = useStore();
-
-const GET_MY_RECIPES = gql`
-  query ($userid: uuid) {
-    get_my_recipes(args: { user_id: $userid }) {
-      image
-      title
-      id
-    }
-  }
-`;
-
-const DELETE_MY_RECIPE = gql`
-  mutation ($recipeid: uuid) {
-    delete_my_recipe(args: { recipe_id: $recipeid }) {
-      id
-    }
-  }
-`;
 
 const { mutate: deleteRecipe } = useMutation(DELETE_MY_RECIPE);
 

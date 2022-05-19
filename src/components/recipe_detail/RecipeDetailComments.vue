@@ -103,14 +103,12 @@
 </template>
 
 <script setup>
-import { useMutation, useQuery } from "@vue/apollo-composable";
-import { computed, ref, watchEffect } from "vue";
-import { gql } from "graphql-tag";
+import { useMutation } from "@vue/apollo-composable";
+import { ref, watchEffect } from "vue";
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 import { ADD_COMMENT } from "../../composables/mutations";
-import { GET_COMMENTS_AND_REVIEWS } from "../../composables/queries";
 const props = defineProps({
   data: Object,
   refresh: Function,

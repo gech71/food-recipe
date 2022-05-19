@@ -180,7 +180,7 @@
 import { ref } from "@vue/reactivity";
 import { useRoute, useRouter } from "vue-router";
 import { useStore } from "vuex";
-import { useMutation, useQuery } from "@vue/apollo-composable";
+import { useMutation } from "@vue/apollo-composable";
 import {
   TOGGLE_BOOKMARK,
   TOGGLE_FAVORITE,
