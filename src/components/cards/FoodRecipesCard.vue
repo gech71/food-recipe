@@ -48,7 +48,11 @@
               ></path>
             </svg>
             <p class="text-sm">
-              {{ Math.ceil(foodProperty.rating_count) }}
+              {{
+                foodProperty.rating_count % 2 == 0
+                  ? foodProperty.rating_count
+                  : foodProperty.rating_count.toFixed(1)
+              }}
             </p>
           </span>
           <span class="flex items-center rounded-full gap-2">

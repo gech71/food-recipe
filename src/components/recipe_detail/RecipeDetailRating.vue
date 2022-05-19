@@ -3,7 +3,9 @@
     class="flex items-center justify-start gap-6 bg-slate-200 w-full h-fit py-3 rounded-xl"
   >
     <p class="text-xl font-bold text-slate-600">
-      Total Recipe Rating ({{ Math.ceil(totalRating) }})
+      Total Recipe Rating ({{
+        totalRating % 2 == 0 ? totalRating : totalRating.toFixed(2)
+      }})
     </p>
     <div class="flex items-center">
       <p class="flex">
