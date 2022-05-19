@@ -38,20 +38,12 @@ import { useQuery } from "@vue/apollo-composable";
 import { computed, onMounted, watchEffect } from "@vue/runtime-core";
 import { gql } from "graphql-tag";
 import { useStore } from "vuex";
+import { GET_FAVORITES } from "../composables/queries";
 
 const store = useStore();
-const getFavorites = gql`
-  query ($userId: uuid) {
-    get_favorites_by_id(args: { user_id: $userId }) {
-      title
-      image
-      id
-    }
-  }
-`;
 
 const { result, variables, loading, refetch, fetchMore } =
-  useQuery(getFavorites);
+  useQuery(GET_FAVORITES);
 variables.value = {
   userId: store.state.user.id,
 };

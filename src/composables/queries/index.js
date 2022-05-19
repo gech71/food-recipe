@@ -108,3 +108,23 @@ export const RATING_VAR = gql`
     }
   }
 `;
+
+export const GET_BOOKMARKS = gql`
+  query ($userId: uuid) {
+    get_bookmarks_by_id(args: { user_id: $userId }) {
+      title
+      image
+      id
+    }
+  }
+`;
+
+export const GET_FAVORITES = gql`
+  query ($userId: uuid) {
+    get_favorites_by_id(args: { user_id: $userId }) {
+      title
+      image
+      id
+    }
+  }
+`;

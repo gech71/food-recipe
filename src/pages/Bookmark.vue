@@ -38,19 +38,11 @@ import { useQuery } from "@vue/apollo-composable";
 import { computed, onMounted, watchEffect } from "@vue/runtime-core";
 import { gql } from "graphql-tag";
 import { useStore } from "vuex";
+import { GET_BOOKMARKS } from "../composables/queries";
 
 const store = useStore();
-const getBookmarks = gql`
-  query ($userId: uuid) {
-    get_bookmarks_by_id(args: { user_id: $userId }) {
-      title
-      image
-      id
-    }
-  }
-`;
 
-const { result, variables, loading, fetchMore } = useQuery(getBookmarks);
+const { result, variables, loading, fetchMore } = useQuery(GET_BOOKMARKS);
 variables.value = {
   userId: store.state.user.id,
 };
