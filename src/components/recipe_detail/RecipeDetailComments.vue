@@ -7,7 +7,7 @@
       <div class="flex w-full justify-center items-center">
         <p
           v-if="store.state.user"
-          class="drop-shadow-lg bg-slate-200 px-4 py-2 text-xl rounded-full uppercase font-mono mr-4"
+          class="drop-shadow-lg bg-slate-200 text-xl rounded-full uppercase font-mono mr-4 w-[2.5rem] h-[2.5rem] flex items-center justify-center"
         >
           {{ store.state.user.username.charAt(0) }}
         </p>
@@ -43,7 +43,9 @@
       <div class="flex flex-col w-[90vw] mx-auto">
         <div class="flex flex-col items-start px-4 gap-2">
           <div class="flex gap-2 items-center">
-            <p class="bg-slate-300 px-3 py-1 rounded-full uppercase font-mono">
+            <p
+              class="bg-slate-300 rounded-full uppercase font-mono w-[2rem] h-[2rem] flex items-center justify-center"
+            >
               {{ review.user?.username?.charAt(0) }}
             </p>
             <div class="flex flex-col">
