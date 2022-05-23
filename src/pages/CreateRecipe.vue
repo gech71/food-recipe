@@ -426,7 +426,6 @@ const submit = handleSubmit(
 function previewImages() {
   if (this.files) {
     const files = [...this.files];
-
     selectedImages.value = [];
     selectedImageNames.value = [];
     featuredImage.value = 0;

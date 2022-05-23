@@ -4,7 +4,7 @@
       class="group relative hover:cursor-pointer transition-all duration-500 flex flex-col items-center rounded-md bg-slate-100 hover:drop-shadow-2xl"
     >
       <img :src="image" alt="" class="object-cover h-36 w-full rounded-t-md" />
-      <h1 class="pb-2 bg-gray-100 w-full text-center rounded-b-md">
+      <h1 class="pb-2 bg-gray-100 w-full text-center rounded-b-md truncate">
         {{ title }}
       </h1>
     </div>
