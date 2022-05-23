@@ -11,6 +11,7 @@
       <SignUp v-else />
     </div>
     <!-- <div class=""></div> -->
+    
     <div
       ref="sideRef"
       class="md:bg-slate-300 bg-inherit h-full flex flex-col items-center justify-center transition-all duration-500 rounded-xl"

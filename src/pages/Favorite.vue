@@ -10,6 +10,7 @@
       <Loading class="mx-auto" />
       <p>Loading...</p>
     </div>
+    
     <div v-else-if="favorites.length == 0">
       <div class="w-full text-center font-light mt-40 text-2xl text-gray-400">
         No Favorite Recipes To Show

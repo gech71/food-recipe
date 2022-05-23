@@ -5,8 +5,6 @@ export const store = createStore({
     return {
       user: null,
       accessToken: null,
-      reloadBeforeRouteEntry: true,
-      pageLoading: false,
     };
   },
   mutations: {
@@ -15,12 +13,6 @@ export const store = createStore({
     },
     setAccessToken(state, payload) {
       state.accessToken = payload;
-    },
-    setReloadBeforeRouteEntry(state, payload) {
-      state.reloadBeforeRouteEntry = payload;
-    },
-    setPageLoading(state, payload) {
-      state.pageLoading = payload;
     },
   },
   actions: {

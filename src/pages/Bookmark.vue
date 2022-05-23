@@ -14,6 +14,7 @@
       <div class="w-full text-center font-light mt-40 text-2xl text-gray-400">
         There Is No Saved Recipe
       </div>
+      
     </div>
     <div
       v-else

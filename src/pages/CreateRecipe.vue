@@ -12,6 +12,7 @@
         <h1
           class="z-20 w-full text-xl font-semibold sticky top-0 bg-white drop-shadow-sm p-2"
         >
+        
           {{
             selectedImages.length == 1
               ? "Featured Image Preview"

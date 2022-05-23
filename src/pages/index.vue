@@ -95,6 +95,7 @@ const handleSearchValue = (search_value) => (searchValue.value = search_value);
 watchEffect(() => {
   setVariables(categoryName.value, searchBy.value, searchValue.value);
 });
+
 function setVariables(_cat, _seBy, _seVa) {
   variables.value = {
     category_name: _cat,

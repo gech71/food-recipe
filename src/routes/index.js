@@ -16,11 +16,9 @@ const router = createRouter({
 
 router.beforeEach(async (to, from, next) => {
   if (store.state.user == null && privateRoutes.includes(to.path)) {
-    store.commit("setReloadBeforeRouteEntry", false);
     next("/Authentication");
   } else next();
 });
 
-router.afterEach((to, from) => {});
 
 export default router;
