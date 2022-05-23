@@ -11,7 +11,6 @@
     <div
       class="w-full text-center font-light mt-40 text-2xl text-gray-400 px-8"
     >
-    
       Recipe With Id <span class="text-red-900">{{ route.query.id }}</span> Not
       Found
     </div>
