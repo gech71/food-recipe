@@ -90,8 +90,7 @@ onMounted(() => {
 });
 
 const handleSearchBy = (search_by) => (searchBy.value = search_by);
-const handleCategoryName = (category_name) =>
-  (categoryName.value = category_name);
+const handleCategoryName = (category_name) => (categoryName.value = category_name);
 const handleSearchValue = (search_value) => (searchValue.value = search_value);
 watchEffect(() => {
   setVariables(categoryName.value, searchBy.value, searchValue.value);
