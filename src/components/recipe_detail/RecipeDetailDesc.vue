@@ -61,7 +61,7 @@
 
     <div class="px-4">
       <h2 class="text-xl font-semibold text-slate-500">description</h2>
-      <p class="text-sm indent-4 my-2">
+      <p class="text-sm indent-4 my-2 break-all">
         {{ description }}
       </p>
     </div>

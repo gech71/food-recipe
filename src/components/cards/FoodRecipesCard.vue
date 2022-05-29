@@ -16,7 +16,7 @@
             <h1 class="text-sm font-bold flex-1">
               {{ foodProperty.title }}
             </h1>
-            <h1 class="text-[10px] pl-1 text-gray-400">
+            <h1 class="text-[10px] pl-1 text-gray-400 ">
               {{ foodProperty.createdby }}
             </h1>
           </div>
