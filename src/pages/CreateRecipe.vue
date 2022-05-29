@@ -185,7 +185,7 @@
                 <h1 v-for="ingredient in ingredients" :key="ingredient.id">
                   <div class="bg-slate-300 gap-2 rounded-xl px-2">
                     <div class="flex">
-                      <p class="flex-1">{{ ingredient }}</p>
+                      <p class="flex-1 break-all">{{ ingredient }}</p>
 
                       <img
                         @click="removeIngredient(ingredient)"
@@ -224,7 +224,7 @@
                 <h1 v-for="step in steps" :key="step.id">
                   <div class="bg-slate-300 gap-2 rounded-xl px-2">
                     <div class="flex">
-                      <p class="flex-1">{{ step }}</p>
+                      <p class="flex-1 break-all">{{ step }}</p>
 
                       <img
                         @click="removeStep(step)"
