@@ -27,7 +27,7 @@
             ></path>
           </svg>
           <p
-            class="font-semibold text-gray-700 flex flex-col w-full px-5 py-[0.1rem] rounded-md text-sm"
+            class="font-semibold text-gray-700 flex flex-col w-full px-5 py-[0.1rem] rounded-md text-sm break-all"
           >
             {{ ing }}
           </p>
@@ -51,7 +51,7 @@
         <div class="flex flex-col w-full px-5 py-[0.1rem] rounded-md">
           <p class="font-bold mr-3 text-green-400">Step {{ index + 1 }}</p>
 
-          <p class="font-semibold text-gray-700 indent-2">
+          <p class="font-semibold text-gray-700 indent-2 break-all">
             {{ step }}
           </p>
         </div>
