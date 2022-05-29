@@ -23,7 +23,7 @@
           <p class="text-xs pl-2">{{ foodProperty.duration }}</p>
         </div>
 
-        <h1 class="text-[0.75rem] font-semibold text-gray-400 flex-1 indent-2">
+        <h1 class="text-[0.75rem] font-semibold text-gray-400 flex-1 indent-2 break-all">
           {{
             foodProperty.description.length > 105
               ? foodProperty.description.substring(0, 105) + "..."
