@@ -71,7 +71,6 @@
                     ></path>
                   </svg>
                 </p>
-
                 <p v-if="review.rating < 5" class="flex">
                   <svg
                     v-for="rate in 5 - review.rating"

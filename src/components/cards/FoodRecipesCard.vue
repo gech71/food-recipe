@@ -10,7 +10,7 @@
       />
       <div
         class="w-full bg-white flex flex-col px-2 py-1 justify-between rounded-r-md gap-1"
-      >
+      > 
         <div class="flex w-full">
           <div class="flex flex-col flex-1 truncate w-32">
             <h1 class="text-sm font-bold flex-1">
@@ -51,7 +51,7 @@
               {{
                 Number.isInteger(foodProperty.rating_count)
                   ? foodProperty.rating_count
-                  : foodProperty.rating_count.toFixed(1)
+                  : foodProperty.rating_count?.toFixed(1)
               }}
             </p>
           </span>

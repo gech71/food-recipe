@@ -19,7 +19,7 @@
           data-testid="GradeIcon"
           tabindex="-1"
           title="Grade"
-        >
+        > 
           <path
             style="fill: #ff9900; stroke-width: 1; stroke: #ff9900"
             d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
@@ -172,7 +172,6 @@ const props = defineProps({
 
 const totalRating = ref(0);
 const userRate = ref(0);
-
 watchEffect(() => {
   totalRating.value = props.data[0]?.rating_count ?? 0;
   userRate.value = props.data[0]?.my_review[0]?.rating ?? 0;
