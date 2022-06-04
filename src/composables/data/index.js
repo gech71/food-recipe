@@ -13,8 +13,8 @@ export const categorys = [
 export const ingredients = ref([]);
 export const steps = ref([]);
 export const privateRoutes = [
-  "/Bookmark",
-  "/CreateRecipe",
-  "/Favorite",
-  "/MyRecipes",
+  "/bookmark",
+  "/createrecipe",
+  "/favorite",
+  "/myrecipes",
 ];

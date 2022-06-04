@@ -20,7 +20,7 @@ onMounted(() => {
       store.dispatch("SET_USER", result.user);
     }
     if (result.user === null) {
-      if (privateRoutes.includes(route.path)) {
+      if (privateRoutes.includes(route.path.toString().toLocaleLowerCase())) {
         router.push("/");
       }
     }

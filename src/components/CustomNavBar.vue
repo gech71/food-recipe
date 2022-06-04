@@ -218,7 +218,7 @@ async function handleLogOut() {
   store.dispatch("SET_USER", null);
   user.value = null;
   showUserDetail.value = !showUserDetail.value;
-  if (privateRoutes.includes(route.path)) {
+  if (privateRoutes.includes(route.path.toString().toLocaleLowerCase())) {
     router.push("/");
   }
   axios.get("/logout").then((res) => {

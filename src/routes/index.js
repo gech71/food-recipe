@@ -15,7 +15,7 @@ const router = createRouter({
 });
 
 router.beforeEach(async (to, from, next) => {
-  if (store.state.user == null && privateRoutes.includes(to.path)) {
+  if (store.state.user == null && privateRoutes.includes(to.path.toString().toLocaleLowerCase())) {
     next("/Authentication");
   } else next();
 });
