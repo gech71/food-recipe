@@ -21,7 +21,7 @@ refresh().then((res) => {
   store.dispatch("SET_USER", res.user);
   store.dispatch("SET_ACCESS_TOKEN", res.accessToken);
   const httpLink = createHttpLink({
-    uri: "https://f-recipe-app.herokuapp.com/v1/graphql",
+    uri: "https://food-recipe-app-2022.hasura.app/v1/graphql",
   });
 
   const authLink = setContext((_, { headers }) => {
