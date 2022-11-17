@@ -114,6 +114,7 @@
           <h1 class="text-gray-500 text-sm">{{ user?.email }}</h1>
           <CustomButton @click="handleLogOut" btnName="Log Out" />
         </div>
+        <p>showDRef</p>
       </div>
     </div>
   </nav>

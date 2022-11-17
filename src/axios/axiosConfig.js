@@ -1,7 +1,8 @@
 import axios from "axios";
 
 // const baseURL = "http://localhost:5000/";
-const baseURL = "https://floating-temple-76128.herokuapp.com/";
+// const baseURL = "https://floating-temple-76128.herokuapp.com/";
+const baseURL = "https://food-recipe-app-backend.onrender.com";
 
 const app = axios.create({
   baseURL,
