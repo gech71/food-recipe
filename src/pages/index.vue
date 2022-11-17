@@ -26,7 +26,7 @@
           >
             <SelectCategory @category-name="handleCategoryName" />
           </div>
-<h1>GEtaye Temesgen</h1>
+
           <div
             v-if="loading"
             class="text-2xl w-full flex-1 items-center text-center justify-center mt-5"
